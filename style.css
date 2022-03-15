@@ -152,7 +152,6 @@ nav > ul > li:hover {
 .about_section {
   width: 75%;
   margin: auto;
-  height: 1000px;
 }
 .about_section > header > h3 {
   font-size: 20pt;
@@ -161,8 +160,8 @@ nav > ul > li:hover {
 }
 
 .about_section > main {
-  border-top: 1.5px solid rgb(160, 160, 160);
-  border-bottom: 1.5px solid rgb(160, 160, 160);
+  border-top: 1.5px solid rgb(175, 175, 175);
+  border-bottom: 1.5px solid rgb(175, 175, 175);
   display: flex;
   align-items: flex-start;
   padding: 4rem 0;
@@ -196,9 +195,9 @@ nav > ul > li:hover {
 }
 .left_side > ul > li:before {
   list-style: square;
-  content: "\25AA"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-  color: black; /* Change the color */
-  font-weight: bold; /* If you want it to be bold */
+  content: "\25AA";
+  color: black;
+  font-weight: bold;
   display: inline-block;
   width: 1em;
 }
@@ -219,6 +218,55 @@ nav > ul > li:hover {
 .right_side > img {
   width: 100%;
 }
+.footer_section {
+  width: 75%;
+  margin: auto;
+}
+
+.last_section {
+  background-color: rgba(199, 198, 198, 0.632);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+
+  border-radius: 5px;
+  width: 75%;
+  margin: 30px auto;
+}
+
+.right_one > h1 {
+  font-size: 14pt;
+  font-weight: 500;
+  color: #1a6692;
+}
+.right_one > p {
+  font-size: 8pt;
+  color: gray;
+}
+
+.last_section > button {
+  border: none;
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.last_section > button:hover {
+  background-color: black;
+  color: red;
+  transition: 0.5s all ease;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1.5px solid rgb(175, 175, 175);
+  padding: 25px;
+  margin: auto;
+  width: 75%;
+}
 
 @media only screen and (max-width: 800px) {
   nav > ul {
@@ -230,6 +278,13 @@ nav > ul > li:hover {
 
   .products_list {
     width: 100%;
+  }
+  .last_section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .last_section > button {
+    margin-top: 1rem;
   }
 }
 @media only screen and (max-width: 1000px) {
